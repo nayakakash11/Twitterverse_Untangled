@@ -2,11 +2,11 @@ import org.apache.spark.graphx.GraphLoader
 import org.apache.spark.graphx._
 import org.apache.spark.sql.functions._
 
-val graph = GraphLoader.edgeListFile(sc, "/Users/akashnayak/Documents/higgs-social_network.edgelist")
+val graph = GraphLoader.edgeListFile(sc, "higgs-social_network.edgelist")
 
 val cc = graph.connectedComponents().vertices
 
-val users = sc.textFile("/Users/akashnayak/Documents/Foll_ID.txt").map {line => val fields = line.split(" ")(fields(0).toLong, fields(1))}
+val users = sc.textFile("TwitterId.txt").map {line => val fields = line.split(" ")(fields(0).toLong, fields(1))}
 
 val join = users.join(cc).map {case (id, (username, cc)) => (username, cc)}
 

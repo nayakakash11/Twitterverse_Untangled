@@ -3,7 +3,7 @@ import org.apache.spark.graphx._
 import org.apache.spark.sql.functions._
 import org.apache.spark.graphx.lib._
 
-val graph = GraphLoader.edgeListFile(sc, "/Users/akashnayak/Documents/higgs-social_network.edgelist")
+val graph = GraphLoader.edgeListFile(sc, "higgs-social_network.edgelist")
 
 val degreeCentrality = graph.degrees
 
