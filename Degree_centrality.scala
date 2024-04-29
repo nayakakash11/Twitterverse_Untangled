@@ -11,8 +11,8 @@ val degrees: VertexRDD[Int] = graph.degrees.persist()
 
 val normalized = degrees.map((s => (s._1, s._2*normalizationFactor)))
 
-val users = sc.textFile("TwitterId.txt").map { line => line.split(" ") match {
-  case Array(id, name) => (id.toLong, name.toInt) } }
+val users = sc.textFile("Twitter_Id.txt").map { line => line.split(" ") 
+  match { case Array(id, name) => (id.toLong, name.toInt) } }
 
 val ranksByUsername = users.join(normalized).map { case (id, (username, score)) => (username, score) }
 
