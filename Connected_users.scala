@@ -6,8 +6,8 @@ val graph = GraphLoader.edgeListFile(sc, "social_network.edgelist")
 
 val cc = graph.connectedComponents().vertices
 
-val users = sc.textFile("TwitterId.txt").map { line => line.split(" ") match {
-  case Array(id, name) => (id.toLong, name.toInt) } }
+val users = sc.textFile("Twitter_Id.txt").map { line => line.split(" ") 
+  match { case Array(id, name) => (id.toLong, name.toInt) } }
 
 val join = users.join(cc).map {case (id, (username, cc)) => (username, cc)}
 
