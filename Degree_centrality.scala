@@ -16,7 +16,7 @@ val users = sc.textFile("Twitter_Id.txt").map { line => line.split(" ")
 
 val ranksByUsername = users.join(normalized).map { case (id, (username, score)) => (username, score) }
 
-val top10 = degree.top(10)(Ordering.by(_._2))
+val top10 = ranksByUsername.top(10)(Ordering.by(_._2))
 
 top10.foreach {case (id, dc) => println(s"User Id: $id, Degree Centrality: $dc")}
 
