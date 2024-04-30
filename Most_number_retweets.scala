@@ -5,7 +5,7 @@ import org.apache.spark.graphx.lib._
 
 val graph = GraphLoader.edgeListFile(sc, "retweet_network.edgelist")
 
-val retweets = graph.indegrees
+val retweets = graph.inDegrees
 
 val top10 = retweets.top(10)(Ordering.by(_._2))
 
