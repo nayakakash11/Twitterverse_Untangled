@@ -5,7 +5,7 @@ import org.apache.spark.graphx.lib._
 
 val graph = GraphLoader.edgeListFile(sc, "mention_network.edgelist")
 
-val mentions = graph.indegrees
+val mentions = graph.inDegrees
 
 val top10 = mentions.top(10)(Ordering.by(_._2))
 
