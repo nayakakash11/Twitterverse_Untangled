@@ -1,4 +1,4 @@
-# Twitter-Dataset-Analysis
+# Twitterverse_Untangled
 
 #### Team Members Information - Aditya Raj (22BDS002), Akash Nayak (22BDS003)
 
