@@ -2,7 +2,7 @@ import org.apache.spark.graphx.{Graph,GraphLoader, VertexRDD}
 import org.apache.spark.{SparkConf, SparkContext}
 
 val time0 = System.currentTimeMillis()
-val graph = GraphLoader.edgeListFile(sc, "followers-new.txt")
+val graph = GraphLoader.edgeListFile(sc, "/hdfs://nn.xxxxxxxxx:port_no/social_network.txt")
 
 val nodeNumber = graph.numVertices
 val previousValue = graph.mapVertices((vId, eigenvalue) => 1.0 / nodeNumber)
