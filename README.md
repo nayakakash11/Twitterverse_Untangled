@@ -1,6 +1,6 @@
 # Twitter-Dataset-Analysis
 
-####Team Members Information - Aditya Raj (22BDS002), Akash Nayak (22BDS003)
+#### Team Members Information - Aditya Raj (22BDS002), Akash Nayak (22BDS003)
 
 #### IMPORTANT: Please setup Hadoop, Spark and GraphX using documentation from Apache <br>
 #### Download the src folder and run everything on spark-shell.sh after single-client/multi-node setup configuration depending on the algorithm complexity<br>
