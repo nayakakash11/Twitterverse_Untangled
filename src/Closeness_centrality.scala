@@ -1,7 +1,7 @@
 import org.apache.spark.graphx.{EdgeRDD, GraphLoader, VertexRDD, lib}
 
 val time0 = System.currentTimeMillis()
-val graph = GraphLoader.edgeListFile(sc, "/Users/akashnayak/Documents/Twitter_Datasets/social_network.txt")
+val graph = GraphLoader.edgeListFile(sc, "/hdfs://nn.xxxxxxxxx:port_no/social_network.txt")
 
 val cnt = graph.vertices.count()
 
