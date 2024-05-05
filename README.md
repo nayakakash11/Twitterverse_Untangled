@@ -15,10 +15,11 @@ The source code for all the programs are located in src/.
 This repository consists of eight programs all written in scala. We initially wrote these scala programs as objects but converted it to line-by-line scala code for easy execution in the spark-shell. For converting the scala programs into jar files and for execution on Hadoop(MapReduce), you must use sbt for conversion and then spark-submit.
 
 Algorithms Utilised - <br>
-1. PageRank
-2. Connected Components
-3. Triangle Counting
-4. Shortest Paths
+1. PageRank (Single Client Setup Recommended)
+2. Connected Components (Single Client Setup Recommended)
+3. Triangle Counting (Multi-Node Cluster Setup Recommended)
+4. Shortest Paths (Multi-Node Cluster Setup Recommended)
+5. Degree Counting (Single Client Setup Recommended)
 <br>
 
 
