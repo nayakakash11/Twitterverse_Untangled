@@ -12,7 +12,7 @@
 
 The source code for all the programs are located in src/.
 
-This repository consists of eight programs all written in scala. We initially wrote these scala programs as objects but converted it to line-by-line scala code for easy execution in the spark-shell. For converting the scala programs into jar files and for execution on Hadoop(MapReduce), you must use sbt for conversion and then spark-submit.
+This repository consists of eight programs all written in scala. We initially wrote these scala programs as objects but converted it to line-by-line scala code for easy execution in the spark-shell. For converting the scala programs into jar files and for execution on Hadoop(MapReduce), you must use sbt for conversion and then spark-submit. (Not Recommended, much slower compared to Spark)
 
 Algorithms Utilised - <br>
 1. PageRank (Single Client Setup Recommended)
