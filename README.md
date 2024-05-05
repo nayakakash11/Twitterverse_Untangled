@@ -1,4 +1,4 @@
-# Twitterverse_Untangled
+# Twitterverse Untangled : Social Network Analysis (SNA) Project
 
 #### Team Members Information - Aditya Raj (22BDS002), Akash Nayak (22BDS003)
 
