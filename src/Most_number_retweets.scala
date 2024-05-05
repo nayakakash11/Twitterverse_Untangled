@@ -5,7 +5,7 @@ import org.apache.spark.graphx.lib._
 
 
 
-val graph = GraphLoader.edgeListFile(sc, "retweet_network.edgelist")
+val graph = GraphLoader.edgeListFile(sc, "hdfs://nn.xxxxxxxxx:port_no/retweet_network.txt")
 
 val retweets = graph.indegrees
 
