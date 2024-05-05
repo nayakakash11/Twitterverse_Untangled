@@ -3,7 +3,7 @@ import org.apache.spark.graphx._
 import org.apache.spark.sql.functions._
 import org.apache.spark.graphx.lib._
 
-val graph = GraphLoader.edgeListFile(sc, "social_network.edgelist")
+val graph = GraphLoader.edgeListFile(sc, "hdfs://nn.xxxxxxxxx:port_no/social_network.txt")
 
 val degree = graph.degrees
 
