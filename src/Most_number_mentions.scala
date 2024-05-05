@@ -3,7 +3,7 @@ import org.apache.spark.graphx._
 import org.apache.spark.sql.functions._
 import org.apache.spark.graphx.lib._
 
-val graph = GraphLoader.edgeListFile(sc, "mention_network.edgelist")
+val graph = GraphLoader.edgeListFile(sc, "hdfs://nn.xxxxxxxxx:port_no/mention_network.txt")
 
 val mentions = graph.indegrees
 
