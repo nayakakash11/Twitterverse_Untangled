@@ -26,8 +26,9 @@ Algorithms Utilised - <br>
 Dataset File Names:- <br>
 1. Social Network Dataset - social_network.txt
 2. Retweet Network Dataset - retweet_network.txt
-3. Mention Network Datase - mention_network.txt
-4. Twitter ID - Twitter_ID.txt
+3. Mention Network Dataset - mention_network.txt
+4. Mention Network Dataset (Weighted) - mention_network_weighted.txt  (For shortest path algorithm, have taken all edge weights to be equal to 1)
+5. Twitter ID - Twitter_ID.txt
 <br>
 
 Due to Github's Upload Size limitation we have uploaded the datasets on Google Drive. Link - [https://drive.google.com/drive/folders/1BKLjBFBPrYlw1Xd8ufVSIHavvok-QNrd?usp=sharing](https://drive.google.com/drive/folders/1BKLjBFBPrYlw1Xd8ufVSIHavvok-QNrd?usp=sharing)
