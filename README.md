@@ -20,6 +20,9 @@ Algorithms Utilised - <br>
 3. Triangle Counting (Multi-Node Cluster Setup Recommended)
 4. Shortest Paths (Multi-Node Cluster Setup Recommended)
 5. Degree Counting (Single Client Setup Recommended)
+
+We also observed that when we ran the Triangle Count algorithm on a single node cluster vs a dual-node cluster, we received a difference of 45.34s in terms of computation time on our cluster configuration (limited to our own cluster and the reason why it has not been included in the report, requires more data from other configurations to achieve an average time difference). This time difference could have been massively increased if the network in which the node cluster was set up had lesser traffic on it.
+
 <br>
 
 
@@ -35,6 +38,5 @@ Due to Github's Upload Size limitation we have uploaded the datasets on Google D
 
 After downloading these files, upload the files onto HDFS using the HDFS -put (insert local address) (insert hadoop file address). After which replace the generic address in the source code with the address of the file in your setup HDFS. 
 
-We also observed that when we ran the algorithm on a single node cluster vs a dual-node cluster, we received a difference of 45.34s in terms of computation time. This time difference could have been massively increased if the network in which the node cluster was set up had lesser traffic on it.
 
 
